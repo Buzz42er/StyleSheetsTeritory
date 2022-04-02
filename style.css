@@ -191,3 +191,17 @@ div {
     padding: 10px;
 
 }
+
+.bgimage {
+    
+    background-image: url("/slike/Snimka\ zaslona\ 2022-04-03\ 001542.jpg");
+    /*background-repeat: repeat-x;
+      background-repeat: repeat-y;*/
+    background-attachment: fixed;
+}
+
+.bgimage2 {
+    
+    background-image: url("/slike/Snimka\ zaslona\ 2022-04-03\ 001542.jpg");
+    background-attachment: scroll;
+}
