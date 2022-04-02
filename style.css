@@ -17,12 +17,14 @@ p /*selector*/ {
 
 body {
     display: flex;
-    align-content: space-around;
+    flex-wrap: wrap;/*gets content inline when there is room for it otherwise makes them go in another row*/
 }
 
 div {
 
     margin: 10px;
+    /*box has width and height that you can change like this*/
+    /*min and max width and hight -> that way your box can be standardised for multiple screens, it looks good everywere*/
     width: 250px;
     height: 122px;
     display: flex;
@@ -32,7 +34,8 @@ div {
 
 
 .external {
-    /*text*/
+    /*text, mostly*/
+    /*this is how you manipulate background color of the box(element)*/
     background-color: rgb(31, 82, 141);
     color: rgb(252, 252, 252); /*text color*/
     font-family: "Audiowide", sans-serif;
@@ -42,6 +45,15 @@ div {
     /*text-align: center; right; left;*/
     /*vertical-align: middle; top; bottom; // baseline; sub; super; -10px*/
     text-decoration: overline underline ;/*line-through; none; inherit; blink(This value is valid but is deprecated and most browsers ignore it.)*/
+    text-shadow: -1px -2px 0.5em rgb(124, 124, 124);/*blur all ower*/
+    /*
+    first – the X-coordinate
+    secound – the Y-coordinate
+    third – the blur radius
+    0.5em - blur all over
+    grey – the color of the shadow
+    */
+
 }
 
 
@@ -65,6 +77,8 @@ div {
     background-color: rgb(201, 157, 37);
     color: rgb(255, 255, 255);
 }
+
+
 /*problem - pitat Vjerana
 .alignDiv {
     background-color: aquamarine;
@@ -87,5 +101,93 @@ div {
 
     font-family: 'Flow Circular', cursive;
     background-color: aquamarine;
+    text-indent: 25px;
+}
+
+.indent em {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+
+.transform {
+    background-color: darksalmon;
+    color:floralwhite ;
+    text-transform: capitalize;/*capitalizes first character of every word*/
+}
+
+.upper {
+    background-color: darksalmon;
+    color:floralwhite ;
+    text-transform: uppercase;
+}
+
+.lower {
+    background-color: darksalmon;
+    color:floralwhite ;
+    text-transform: lowercase;
+}
+
+.letterSpacing {
+    background-color: lightgrey;
+    color: rgb(160, 76, 66);
+    width: 500px;
+    display:table;
+    
+
+
+}
+
+.letterSpacing p.normal {
+    
+    letter-spacing: normal;
+}
+
+.letterSpacing p.positive {
+    letter-spacing: 4px;
+
+}
+
+.letterSpacing p.negative {
+    letter-spacing: -1px;
+}
+
+.wordSpacing {
+    background-color: lightgrey;
+    color: rgb(160, 76, 66);
+    width: 500px;
+    display:table;
+    /*px, pt, pc, cm, mm, inches, em, and ex*/
+
+
+}
+
+.wordSpacing p.normal {
+    
+    word-spacing: normal;
+}
+
+.wordSpacing p.positive {
+    word-spacing: 15px;
+
+}
+
+.wordSpacing p.negative {
+    word-spacing: -4px;
+}
+
+
+/*box model*/
+
+/*order of box properties = top -> right -> bottom -> left*/
+
+.bproperties {
+    background-color: skyblue;
+    color: salmon;
+}
+
+.bproperties p.textBorder {
+    border: 5px dashed salmon; /*width style color*/
+    padding: 10px;
 
 }
