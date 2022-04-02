@@ -1,0 +1,91 @@
+/*CSS file
+Cascading Style Sheets
+Look and feel of your site
+*/
+
+/*this is a comment*/
+
+/*this is how you import google font inside a css file*/
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap');
+/*font-family: 'Flow Circular', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap');
+/*for this font copy this ---> font-family: 'Flow Circular', cursive; */
+
+p /*selector*/ {
+    color/*property*/:red/*value*/;
+}
+
+body {
+    display: flex;
+    align-content: space-around;
+}
+
+div {
+
+    margin: 10px;
+    width: 250px;
+    height: 122px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.external {
+    /*text*/
+    background-color: rgb(31, 82, 141);
+    color: rgb(252, 252, 252); /*text color*/
+    font-family: "Audiowide", sans-serif;
+    font-weight: normal; /*100-900*/
+    font-style: italic; /*style*/
+    font-variant:normal;/*small-caps*/
+    /*text-align: center; right; left;*/
+    /*vertical-align: middle; top; bottom; // baseline; sub; super; -10px*/
+    text-decoration: overline underline ;/*line-through; none; inherit; blink(This value is valid but is deprecated and most browsers ignore it.)*/
+}
+
+
+
+#id /*id selector*/ {
+
+    background-color: chocolate;
+    color: aliceblue;
+    text-decoration: blink; 
+      
+
+}
+
+.class {
+
+    background-color:rosybrown;
+    color: aliceblue;
+}
+
+#id .firstClassInId {
+    background-color: rgb(201, 157, 37);
+    color: rgb(255, 255, 255);
+}
+/*problem - pitat Vjerana
+.alignDiv {
+    background-color: aquamarine;
+    display: inline-table;
+    align-items: center;
+}
+
+.divToAlign {
+    background-color: rgb(51, 143, 143);
+    height: 20px;
+    width: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+*/
+
+
+.indent{
+
+    font-family: 'Flow Circular', cursive;
+    background-color: aquamarine;
+
+}
