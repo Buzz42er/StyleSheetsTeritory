@@ -194,7 +194,7 @@ div {
 
 .bgimage {
     
-    background-image: url("/slike/Snimka\ zaslona\ 2022-04-03\ 001542.jpg");
+    background-image: url("/slike/velikaSlika.jpg");
     /*background-repeat: repeat-x;
       background-repeat: repeat-y;*/
     background-attachment: fixed;
@@ -202,6 +202,35 @@ div {
 
 .bgimage2 {
     
-    background-image: url("/slike/Snimka\ zaslona\ 2022-04-03\ 001542.jpg");
+    background-image: url("/slike/velikaSlika.jpg");
     background-attachment: scroll;
 }
+
+.listStyle {
+    background-color: darksalmon;
+    color:rgb(160, 76, 66);
+    width: 450px;
+
+}
+
+.listStyle .lower-alpha {
+    list-style-type: lower-alpha;
+}
+
+.listStyle .circle {
+    list-style-type: circle;
+}
+
+.listStyle .square {
+    list-style-type: square;
+}
+
+.listStyle .position {
+    list-style-image: url("/slike/miniSlika.jpg");
+    list-style-position: inside;
+}
+
+.listStyle .all {
+    list-style: square outside none; /*tyle; position; image*/
+}
+
