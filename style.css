@@ -11,8 +11,10 @@ Look and feel of your site
 @import url('https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap');
 /*for this font copy this ---> font-family: 'Flow Circular', cursive; */
 
+
+/*Basic*/
 p /*selector*/ {
-    color/*property*/:red/*value*/;
+    color/*property*/: rgb(118, 190, 202)/*value*/;
 }
 
 body {
@@ -30,6 +32,7 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(50, 103, 150);
 }
 
 
@@ -96,7 +99,7 @@ div {
 }
 */
 
-
+/*Working with Text*/
 .indent{
 
     font-family: 'Flow Circular', cursive;
@@ -177,8 +180,9 @@ div {
 }
 
 
-/*box model*/
+/*Properties*/
 
+/*BOX model*/
 /*order of box properties = top -> right -> bottom -> left*/
 
 .bproperties {
@@ -240,10 +244,12 @@ div {
     height: 250px;
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .table .first {
     caption-side: top; /*bottom*/
+    
 }
 
 .table .secound {
@@ -268,7 +274,7 @@ div {
     
 }
 
-.tableSecound   td {
+.tableSecound td {
     border: 1px solid gray;
 }
 
@@ -318,6 +324,251 @@ a:hover - a link is hovered when the mouse is over it
 .mouseCursor .cursorHelp {
     cursor: help;/*many more*/
     
+}
+
+/*Positioning and Layout*/
+
+.displayProperties {
+    background-color: blueviolet;
+    color: darkturquoise;
+    width: 860px;
+    
+}
+.displayProperties .block{
+    background-color: rgb(149, 102, 192);
+    color: darkturquoise;
+    width: 200px;
+    display: block;
+}
+.displayProperties .block span {
+    display: block;
+}
+
+.displayProperties .inline {
+    background-color: rgb(149, 102, 192);
+    color: darkturquoise;
+    width: 400px;
+    
+}
+
+.displayProperties .inline span{
+    display: inline;
+    
+}
+
+.displayProperties .none {
+    background-color: rgb(149, 102, 192);
+    color: darkturquoise;
+}
+
+.displayProperties .none span {
+    display: none;
+    
+}
+
+/*
+There are plenty of other display values, 
+such as list-item, table, table-cell, 
+table-column, grid, etc. 
+Just play with values to see the difference.
+*/
+
+.visibility {
+    background-color: sienna;
+    color: azure;
+}
+
+.visibility .hidden {
+    background-color: dimgray;
+    visibility: hidden; /*visible*/
+}
+.visibility p{
+    color: azure;
+}
+
+.position {
+    background-color: dimgray;
+    display: block;
+    
+}
+
+.position .static {
+    position: static; /*Static positioned elements are not affected by the top, bottom, left, and right properties.*/
+    top:30px;
+    right: 5px;
+    color: red;
+}
+
+.position .fixed {
+    position: fixed;
+    top:30px;
+    right: 5px;
+    
+}
+
+.position .relative {
+    position: relative;
+    background-color: green;
+    color: white;
+    top: 5px;
+    left: 5px;
+    /*This value cannot be used for table cells, 
+    columns, column groups, rows, row groups, or captions.*/
+}
+
+
+.position .absolute {
+    color:burlywood;
+    /*
+    An absolute position element is positioned 
+    relative to the first parent element that has 
+    a position other than static. If no such 
+    element is found, the containing block is <html>.
+
+    Absolutely positioned elements are removed from 
+    the normal flow. The document and other elements 
+    behave like the absolutely positioned element 
+    does not exist.
+    */
+}
+
+/*float*/
+.floating {
+    width: 1200px;
+    height: 300px; 
+    display: flex;
+    justify-content: none;
+    align-items: none;
+
+}
+
+.floating div {
+    background-color: rgb(68, 133, 190);
+    width: 300px;
+    height: 250px;
+}
+
+
+
+.floating .floatnexttoeachother {
+    
+    display: block;
+}
+
+.floating .float img {
+    float: right;
+}
+
+.floating .floatnexttoeachother img {
+    float: left;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.floating .floatnexttoeachother p {
+    width: 240px;
+    float: left;
+}
+
+.floating .floatclean {
+    background-color: rgb(68, 133, 190);
+    display: block;
+}
+
+.floating .floatclean .floati {
+    float: right;
+}
+.floating .floatclean .cleari {    
+    clear: both;
+}
+
+.floating .floatOverflow {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    float: left;
+    overflow: scroll; /*overflow:auto; --> gives scroll bar if needed*/
+    /*default - visible*/
+}
+
+.z_index {
+    display: block;
+    color: aliceblue;
+    
+}
+
+.z_index .yellow {
+    background-color: darkgoldenrod;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    z-index: 3;
+    position: relative;
+    
+}
+
+.z_index .red {
+    background-color: crimson;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-top: -35px;
+    margin-left: 35px;
+    z-index: 2;
+    /*
+    The z-index works only on positioned elements 
+    (position:absolute, position:relative, or position:fixed).
+    */
+}
+
+/*CSS3*/
+/*
+Introduction:
+Some of the most significant new features are:
+Border radius - allows us to create rounded corners for elements.
+Border images - allows us to specify an image as the border around an element.
+Multiple backgrounds - applies multiple backgrounds to elements.
+Animations and effects, and much more!
+
+Box Shadow
+With the box-shadow property, you can attach one or more shadows to 
+an element by specifying values for color, size, blur, and offset.
+
+Gradients
+CSS3 gradients allow us to set the background color of the element to 
+a gradient. Two types of gradients are available: Linear and Radial.
+
+Transforms allow you to rotate, scale, move, and skew elements.
+
+Another popular feature is Transitions which allows you to animate 
+from one CSS property value to another. You can combine it with 
+transforms and animate the element's position, rotation, or scale.
+
+The property attracting the most attention is Animations.
+CSS Animations have their own specifications, and they allow you 
+to create keyframes, set duration, easing, and more.
+*/
+
+.borderr {
+    border-radius: 20px;
+    background-color: greenyellow;
+    color: green;
+}
+
+.border0 {
+    background-color: orangered;
+    border-radius: 0 20px 20px 0;
+    color: aliceblue;
+}
+/*The value of border-radius can also be specified in percentages.*/
+
+.bCircle {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: blue;
+    color: aliceblue;
+
 }
 
 

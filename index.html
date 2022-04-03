@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<!--Basic-->
     <!--this is embedded/internal CSS-->
     <style>
         .embedded {
@@ -24,6 +25,8 @@
 </head>
 
 <body>
+
+<!--Working with Text-->    
     <div class="inline" style="
     
     color:rgb(148, 93, 11); 
@@ -212,5 +215,109 @@
 
 </div>
 
+<!--Positioning and Layout-->
+<div class="displayProperties">
+    <div class="block">
+        <span>First paragraph.</span>
+        <span>Second paragraph.</span>
+        <span>Third paragraph.</span>
+        <span>Fourth paragraph.</span>
+        <span>Fifth paragraph.</span>
+    </div>
+    <div class="inline">
+        <span>First paragraph.</span>
+        <span>Second paragraph.</span>
+        <span>Third paragraph.</span>
+        <span>Fourth paragraph.</span>
+        <span>Fifth paragraph.</span>
+    </div>
+    <div class="none">
+        <span>First paragraph.</span>
+        <span>Second paragraph.</span>
+        <span>Third paragraph.</span>
+        <span>Fourth paragraph.</span>
+        <span>Fifth paragraph.</span>
+    </div>
+</div>
+
+<div class="visibility">
+    <div class="hidden">
+        This text will not display in browser.
+     </div>
+     <p>
+        The space to the right of this paragraph is empty because 
+        the visibility of the div element is set to hidden.
+     </p>
+</div>
+
+<div class="position">
+    <p class="static">This paragraph has a static position.</p>
+    <p class="fixed">Fixed position.</p>
+    <p>
+    some text
+    <span class="relative">Relative</span>some text
+    <span class="relative">Relative</span>some text
+    <span class="relative">Relative</span>some text
+    </p>
+    <p class="absolute">Absolute does not exist any more</p>
+</div>
+
+<!--float-->
+
+<div class="floating">
+    <div class="float">
+    <p><img src="/slike/malaSlika.jpg" />
+        This paragraph has an image that is floated to the <strong>right.</strong> 
+        It is highly recommended to add a margin to images so that the text does 
+        not get too close to the image. If you want your text to be easily read, you 
+        should always add a few pixels between words and borders, images, 
+        and other content. 
+    </p>
+    </div>
+    <div class="floatnexttoeachother">
+        <p><img src="/slike/malaSlika.jpg" />
+            This paragraph has an image that is floated to the <strong>right.</strong> 
+            It is highly recommended to add a margin to images so that the text does 
+            not get too close to the image. If you want your text to be easily read, you 
+            should always add a few pixels between words and borders, images, 
+            and other content. 
+        </p>
+    </div>
+    <div class="floatclean">
+        This paragraph is above the div element 
+        and is not affected by the float right property. 
+        <br/><br/>
+        <section class="floati">
+        <img src="/slike/malaSlika.jpg" />
+        </section>
+        This paragraph comes after the div element 
+        and is affected by the float right property. 
+        <br/><br class="cleari"/>
+        This paragraph is out of the floating group 
+        and is not affected by the float right property.
+        <br/> <br/>
+    </div>
+
+    <div class="floatOverflow">
+        This text is inside the div element, which has a blue 
+        background color and is floated to the left. We set a specific 
+        height and width for the div element, and as you can see, 
+        the content cannot fit.
+    </div>
+
+</div>
+
+<div class="z_index">
+    <div class="yellow">First </div>
+    <div class="red">Secound </div>
+</div>
+
+<!--CSS3-->
+
+<div class="borderr">border radius</div>
+<div class="border0">corners of the border</div>
+<div class="bCircle">Circle with borders
+
+</div>
 </body>
 </html>
