@@ -205,7 +205,7 @@ div {
     background-image: url("/slike/velikaSlika.jpg");
     background-attachment: scroll;
 }
-
+/*List style*/
 .listStyle {
     background-color: darksalmon;
     color:rgb(160, 76, 66);
@@ -233,4 +233,91 @@ div {
 .listStyle .all {
     list-style: square outside none; /*tyle; position; image*/
 }
+/*Table style*/
+.table {
+    background-color: rgb(31, 82, 141);
+    color: rgb(252, 252, 252);
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table .first {
+    caption-side: top; /*bottom*/
+}
+
+.table .secound {
+    border-collapse: separate;
+    empty-cells: show; /*hide*/
+}
+/*Table layout*/
+.tableSecound {
+    background-color: aliceblue;
+    color: darkcyan;
+    display: block;
+    height: 200px;
+    width: 350px;
+    
+
+}
+
+.tableSecound table {
+    border-collapse: separate;
+    border: 1px solid gray;
+    width: 100%;
+    
+}
+
+.tableSecound   td {
+    border: 1px solid gray;
+}
+
+.tableSecound .auto {
+    table-layout: auto;/*The table layout is set to auto by default.*/
+
+}
+
+.tableSecound .fixed {
+    table-layout: fixed;
+}
+
+
+/*Link style*/
+
+/*
+a:link - defines the style for normal unvisited links
+a:visited - defines the style for visited links
+a:active - a link becomes active once you click on it
+a:hover - a link is hovered when the mouse is over it
+*/
+
+.links {
+    background-color: azure;
+    color: aquamarine;
+}
+
+.links .hover a:hover { /*:hover is 1 of 4 pseudo selectors*/
+    color:brown;
+    text-decoration: none; /*removes all decorations(this time just underline)*/
+    /*
+    border:none - removes border from images with links
+    outline:none - removes the dotted border on clicked lines in IE
+    */
+}
+
+.mouseCursor {
+    background-image: url("/slike/mouseCursor.jpg");
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 200px;
+    width: 350px;
+    color: darkorange;
+}
+
+.mouseCursor .cursorHelp {
+    cursor: help;/*many more*/
+    
+}
+
 
