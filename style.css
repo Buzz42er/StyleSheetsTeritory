@@ -721,3 +721,51 @@ that is the first child element of some other element.
 .firstLine::first-line {
     color: #68d127;
 }
+
+.pseudoBefore p::before { /*::after*/
+    content: url("/slike/miniSlika.jpg");
+}
+
+/*spliting a word ahalf*/
+.wrap {
+    display: block;
+    word-wrap: break-word;
+}
+
+
+/*
+FontFaces
+
+The @font-face rule allows custom fonts to be loaded into a webpage.
+With the help of this rule, designs are no longer limited to the fonts that are installed on a user's computer.
+
+In Internet Explorer 8 and earlier, the URL must point to an Embedded OpenType (eot) file, while Firefox, Chrome, etc. support True Type Fonts (ttf) fonts and OpenType Fonts (otf).
+
+Each form of the font family must be declared using the @font-face rule. In the example below, a custom font called "Delicious" is loaded and used for the heading.
+
+Internet Explorer has a built-in bug when multiple @font-face rules are defined. Using #iefix as shown below fixes the problem:
+*/
+
+@font-face {
+    font-family: Delicious;
+    src: url('delicious-Roman.otf');
+}
+/*this is how you define new font family with @font-face*/
+
+.fontFace{
+    font-family: Delicious;
+}
+
+
+/*Gradients & Backgrounds*/
+
+.linearGradients {
+    background: -webkit-linear-gradient(DeepSkyBlue, DarkBlue);
+    /*You can use color names, Hex values, RGB, or HSL colors to define the gradient color.*/
+}
+
+.multipleGradients {
+    background: -webkit-linear-gradient(left, DeepSkyBlue 30%, red 50%, DarkBlue 80%);
+    /*looks best without interference*/
+    /*sharp line if 2 have same color stop value*/
+}
