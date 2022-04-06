@@ -25,6 +25,16 @@ body {
     
 }
 
+img {
+
+    margin: 10px;
+    width: 250px;
+    height: 122px;
+    border-radius: 5px;
+    color: aliceblue;
+
+}
+
 div {
 
     margin: 10px;
@@ -855,3 +865,179 @@ Internet Explorer has a built-in bug when multiple @font-face rules are defined.
 
 /*Transitions & Transforms*/
 
+.transitions {
+    transition: width 0s;
+
+}
+
+.transitions:hover {
+    width: 450px;
+}
+
+.transforms:hover {
+    transform: rotate(10deg); /*for up go negative -> -10deg*/
+}
+
+.translate:active {
+    transform:translate(100px,50px);
+}
+
+.skew:active {
+    transform:skew(-10deg);
+}
+
+.scale:hover {
+     transform: scale(0.7, 0.8);
+}
+
+.multipletrans:hover {
+    transform: rotate(45deg) translate(100px);
+
+}
+
+/*Keyframes hold the styles the element will have at certain times*/
+.keyframes:hover {
+        /*this under is for keyframes, animation*/
+        /*this two are must for animation*/
+        animation-name: colorchange;
+        animation-duration: 1s ;
+}
+
+/*if animation name does not mach any keyframe atribute animation will not execute*/
+@keyframes colorchange {
+    0% {background-color: red; }
+    50% {background-color: green; }
+    100% {background-color: blue; }
+}
+
+/*
+animation-timing-function
+ease - specifies an animation with a slow start, then fast, then end slowly (this is default)
+linear - specifies an animation with the same speed from start to end
+ease-in - specifies an animation with a slow start
+ease-out - specifies an animation with a slow end
+ease-in-out - specifies an animation with a slow start and end
+cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+
+*/
+
+.animation:active {
+    animation-name: somename;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: 5;/*infinite is one of the values, don't use 0, it will never start*/
+    animation-direction: reverse;
+/*
+normal - the default value, which means it plays forward from 0 % to 100%.
+reverse - plays the keyframe in an opposite direction from 100 % to 0%
+alternate - the animation first runs forward, then backward, then forward.
+alternate-reverse - the animation first runs backward, then forward, then backward.
+*/
+}
+
+@keyframes somename {
+    
+    0% {
+        background-color: yellowgreen;
+        transform: rotate(10deg);
+        transform: scale(0.7, 0.8);
+        transform:skew(-10deg);
+        }
+        
+    100% {
+        background-color: white;
+        transform: rotate(-10deg);
+        transform: scale(0.8, 0.9);
+        transform:skew(10deg);
+        }
+}
+
+.alltreed {
+    width: 100%;
+    padding: 40px;
+    margin: 10px 0;
+    border-radius: 0;
+}
+
+.transformsX:hover {
+    transform: rotateX(150deg);
+    background-color: #58d1e3;
+    
+}
+
+.transformsY:hover {
+    transform: rotateY(150deg);
+    background-color: #68d127;
+    
+}
+
+.transformsZ:hover {
+    transform: rotateZ(150deg);
+    background-color: aquamarine;
+}
+
+.transformd:active {
+    transform: translate3d(-20px, 4em, 10px);
+    background-color: red;
+}
+
+.perspective {
+    perspective: 100px;
+    text-align: center;
+}
+
+.perspective .divinside:active {
+    text-align: center;
+    transform: rotateX(45deg);
+    background-color: #58d1e3;
+}
+
+/*CSS filters*/
+
+
+
+
+.drop-shadow:hover {
+    background-color: #58d0e3;
+    color: black;
+    filter:drop-shadow(0 0  5px rgba(49, 49, 49, 0.575)) /*width w and height h with blur b and color c*/
+}
+
+/*Grayscale*/
+.GrayScale .filtered {
+    filter: grayscale(100%);
+}
+
+/*Sepia */
+.Sepia .filtered {
+    filter: sepia(100%);
+}
+
+.saturate .filtered {
+    filter: saturate(50%);
+}
+
+.hue-rotate .filtered {
+    filter: hue-rotate(180deg);
+}
+
+.invert .filtered {
+    filter: invert(70%);
+}
+
+.opacity .filtered {
+    filter: opacity(70%);
+}
+
+.brightness .filtered {
+    filter: brightness(50%);
+}
+
+.contrast .filtered {
+    filter: contrast(150%);
+}
+
+.blur .filtered {
+    filter:blur(5px);
+  }
