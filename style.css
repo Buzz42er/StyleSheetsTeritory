@@ -21,6 +21,8 @@ p /*selector*/ {
 body {
     display: flex;
     flex-wrap: wrap;/*gets content inline when there is room for it otherwise makes them go in another row*/
+    margin: 0;
+    
 }
 
 div {
@@ -55,7 +57,7 @@ div {
     text-shadow: -1px -2px 0.5em rgb(124, 124, 124);/*blur all ower*/
     /*
     first – the X-coordinate
-    secound – the Y-coordinate
+    second – the Y-coordinate
     third – the blur radius
     0.5em - blur all over
     grey – the color of the shadow
@@ -256,12 +258,12 @@ div {
     
 }
 
-.table .secound {
+.table .second {
     border-collapse: separate;
     empty-cells: show; /*hide*/
 }
 /*Table layout*/
-.tableSecound {
+.tableSecond {
     background-color: aliceblue;
     color: darkcyan;
     display: block;
@@ -271,23 +273,23 @@ div {
 
 }
 
-.tableSecound table {
+.tableSecond table {
     border-collapse: separate;
     border: 1px solid gray;
     width: 100%;
     
 }
 
-.tableSecound td {
+.tableSecond td {
     border: 1px solid gray;
 }
 
-.tableSecound .auto {
+.tableSecond .auto {
     table-layout: auto;/*The table layout is set to auto by default.*/
 
 }
 
-.tableSecound .fixed {
+.tableSecond .fixed {
     table-layout: fixed;
 }
 
@@ -318,7 +320,7 @@ a:hover - a link is hovered when the mouse is over it
 .mouseCursor {
     background-image: url("/slike/mouseCursor.jpg");
     background-position: center; /* Center the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-size: contain; /* Resize the background image to /cover/ the entire container, you can also /contain/ it, so that full picutre is in side */
     background-repeat: no-repeat; /* Do not repeat the image */
     height: 200px;
     width: 350px;
@@ -333,35 +335,35 @@ a:hover - a link is hovered when the mouse is over it
 /*Positioning and Layout*/
 
 .displayProperties {
-    background-color: blueviolet;
+    background-color: #8888884b;
     color: darkturquoise;
-    width: 860px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
     
 }
 .displayProperties .block{
-    background-color: rgb(149, 102, 192);
     color: darkturquoise;
-    width: 200px;
     display: block;
+    padding: 5px;
 }
 .displayProperties .block span {
     display: block;
 }
 
 .displayProperties .inline {
-    background-color: rgb(149, 102, 192);
     color: darkturquoise;
-    width: 400px;
+    width: 650px;
+
     
 }
 
 .displayProperties .inline span{
     display: inline;
-    
+
 }
 
 .displayProperties .none {
-    background-color: rgb(149, 102, 192);
     color: darkturquoise;
 }
 
@@ -438,11 +440,14 @@ Just play with values to see the difference.
 
 /*float*/
 .floating {
-    width: 1200px;
+    width: 100%;
     height: 300px; 
     display: flex;
     justify-content: none;
     align-items: none;
+    margin: 10px 0;
+    border-radius: 0%;
+    background-color: #8888884b;
 
 }
 
@@ -623,8 +628,10 @@ box-shadow: horizontal(right) / vertical(down) / blur / spread / color;
 
 .transparentEffect {
     padding: 50px 0;
-    min-width: 500px;
+    min-width: 100%;
+    border-radius: 0;
     display: block;
+
 /*
 Before CSS3, transparent background images were used to create transparency effects. The new features of CSS3 now make it easier to create transparency effects.
 
@@ -668,6 +675,11 @@ In the example below, a transparent glass menu bar is created with CSS3.
     font-family: Arial;
     text-decoration: none;
     display: block;
+}
+
+.transparentEffect a:hover {
+    color: #58d1e3;
+    font-family: 'Flow Circular', cursive;
 }
 
 .textShadow {
@@ -768,4 +780,75 @@ Internet Explorer has a built-in bug when multiple @font-face rules are defined.
     background: -webkit-linear-gradient(left, DeepSkyBlue 30%, red 50%, DarkBlue 80%);
     /*looks best without interference*/
     /*sharp line if 2 have same color stop value*/
+    /*direction of the gradient can be deffined at the beginning of the parentheses*/
+}
+
+.from-side-to-side {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 0;
+    /*body margin needs to be 0*/
+    /*must till here*/
+    box-shadow: 0 0 10px 5px rgba(128, 128, 128, 0.596);
+    /*i like shadows, they make stuff more real*/
+}
+
+/*background: radial-gradient(position, shape or size, color-stops);*/
+
+.background-clip {
+    width: 100%;
+    padding: 40px;
+    margin: 10px 0;
+    border-radius: 0;
+    /*works with images too*/
+    
+}
+
+.background-clip div {
+    background: #58d1e3;
+    border: 3px dotted red;
+    padding: 20px;
+    
+}
+
+.background-clip .first {
+    
+    background-clip: padding-box;
+    
+}
+
+.background-clip .second {
+    
+    background-clip: content-box;
+    
+}
+
+.MultipleBackgrounds {
+    width: 350px;
+    height: 200px;
+    background-image: url("http://www.sololearn.com/uploads/css_logo.png"), url("http://www.sololearn.com/uploads/better-code.jpg");
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+} 
+
+.MultipleBackgrounds2 {
+    background: url("http://www.sololearn.com/uploads/css_logo.png") right top no-repeat, 
+    url("http://www.sololearn.com/uploads/better-code.jpg") left top no-repeat; 
+    width: 350px;
+    height: 200px;
+}
+
+.opacity {
+    width: 400px;
+}
+
+
+#img1 {
+    opacity: 1;
+}
+#img2 {
+    opacity: 0.5;
+}
+#img3 {
+    opacity: 0.25;
 }
