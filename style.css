@@ -1041,3 +1041,17 @@ alternate-reverse - the animation first runs backward, then forward, then backwa
 .blur .filtered {
     filter:blur(5px);
   }
+
+  /*
+  viewport height
+  vh
+  A height of 100vh corresponds to the maximum possible viewport 
+  height. Since the initial viewport height is smaller, the body 
+  element with a min-height of 100vh initially exceeds the viewport 
+  height regardless of its content.
+
+  line-hight
+  The line-height property specifies the height of a line - of text 
+  like one row of text. Note: Negative values are not allowed.
+
+  */
