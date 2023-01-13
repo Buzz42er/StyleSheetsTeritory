@@ -14,15 +14,23 @@ Look and feel of your site
 /*font-family: 'Comfortaa', cursive;*/
 
 /*Basic*/
-p /*selector*/ {
-    color/*property*/: rgb(118, 190, 202)/*value*/;
+p
+
+/*selector*/
+    {
+    color
+    /*property*/
+    : rgb(118, 190, 202)
+        /*value*/
+    ;
 }
 
 body {
     display: flex;
-    flex-wrap: wrap;/*gets content inline when there is room for it otherwise makes them go in another row*/
+    flex-wrap: wrap;
+    /*gets content inline when there is room for it otherwise makes them go in another row*/
     margin: 0;
-    
+
 }
 
 img {
@@ -56,15 +64,21 @@ div {
     /*text, mostly*/
     /*this is how you manipulate background color of the box(element)*/
     background-color: rgb(31, 82, 141);
-    color: rgb(252, 252, 252); /*text color*/
+    color: rgb(252, 252, 252);
+    /*text color*/
     font-family: "Audiowide", sans-serif;
-    font-weight: normal; /*100-900*/
-    font-style: italic; /*style*/
-    font-variant:normal;/*small-caps*/
+    font-weight: normal;
+    /*100-900*/
+    font-style: italic;
+    /*style*/
+    font-variant: normal;
+    /*small-caps*/
     /*text-align: center; right; left;*/
     /*vertical-align: middle; top; bottom; // baseline; sub; super; -10px*/
-    text-decoration: overline underline ;/*line-through; none; inherit; blink(This value is valid but is deprecated and most browsers ignore it.)*/
-    text-shadow: -1px -2px 0.5em rgb(124, 124, 124);/*blur all ower*/
+    text-decoration: overline underline;
+    /*line-through; none; inherit; blink(This value is valid but is deprecated and most browsers ignore it.)*/
+    text-shadow: -1px -2px 0.5em rgb(124, 124, 124);
+    /*blur all ower*/
     /*
     first – the X-coordinate
     second – the Y-coordinate
@@ -77,18 +91,21 @@ div {
 
 
 
-#id /*id selector*/ {
+#id
+
+/*id selector*/
+    {
 
     background-color: chocolate;
     color: aliceblue;
-    text-decoration: blink; 
-      
+    text-decoration: blink;
+
 
 }
 
 .class {
 
-    background-color:rosybrown;
+    background-color: rosybrown;
     color: aliceblue;
 }
 
@@ -116,7 +133,7 @@ div {
 */
 
 /*Working with Text*/
-.indent{
+.indent {
 
     font-family: 'Flow Circular', cursive;
     background-color: aquamarine;
@@ -131,19 +148,20 @@ div {
 
 .transform {
     background-color: darksalmon;
-    color:floralwhite ;
-    text-transform: capitalize;/*capitalizes first character of every word*/
+    color: floralwhite;
+    text-transform: capitalize;
+    /*capitalizes first character of every word*/
 }
 
 .upper {
     background-color: darksalmon;
-    color:floralwhite ;
+    color: floralwhite;
     text-transform: uppercase;
 }
 
 .lower {
     background-color: darksalmon;
-    color:floralwhite ;
+    color: floralwhite;
     text-transform: lowercase;
 }
 
@@ -151,14 +169,14 @@ div {
     background-color: lightgrey;
     color: rgb(160, 76, 66);
     width: 500px;
-    display:table;
-    
+    display: table;
+
 
 
 }
 
 .letterSpacing p.normal {
-    
+
     letter-spacing: normal;
 }
 
@@ -175,14 +193,14 @@ div {
     background-color: lightgrey;
     color: rgb(160, 76, 66);
     width: 500px;
-    display:table;
+    display: table;
     /*px, pt, pc, cm, mm, inches, em, and ex*/
 
 
 }
 
 .wordSpacing p.normal {
-    
+
     word-spacing: normal;
 }
 
@@ -204,16 +222,20 @@ div {
 .bproperties {
     background-color: skyblue;
     color: salmon;
+    height: 100px;
+    padding: 50px;
+    margin: 10px;
 }
 
 .bproperties p.textBorder {
-    border: 5px dashed salmon; /*width style color*/
+    border: 5px dashed salmon;
+    /*width style color*/
     padding: 10px;
 
 }
 
 .bgimage {
-    
+
     background-image: url("/slike/velikaSlika.jpg");
     /*background-repeat: repeat-x;
       background-repeat: repeat-y;*/
@@ -221,14 +243,15 @@ div {
 }
 
 .bgimage2 {
-    
+
     background-image: url("/slike/velikaSlika.jpg");
     background-attachment: scroll;
 }
+
 /*List style*/
 .listStyle {
     background-color: darksalmon;
-    color:rgb(160, 76, 66);
+    color: rgb(160, 76, 66);
     width: 450px;
 
 }
@@ -251,8 +274,10 @@ div {
 }
 
 .listStyle .all {
-    list-style: square outside none; /*tyle; position; image*/
+    list-style: square outside none;
+    /*tyle; position; image*/
 }
+
 /*Table style*/
 .table {
     background-color: rgb(31, 82, 141);
@@ -260,18 +285,21 @@ div {
     height: 250px;
     display: flex;
     flex-wrap: wrap;
-    
+
 }
 
 .table .first {
-    caption-side: top; /*bottom*/
-    
+    caption-side: top;
+    /*bottom*/
+
 }
 
 .table .second {
     border-collapse: separate;
-    empty-cells: show; /*hide*/
+    empty-cells: show;
+    /*hide*/
 }
+
 /*Table layout*/
 .tableSecond {
     background-color: aliceblue;
@@ -279,7 +307,7 @@ div {
     display: block;
     height: 200px;
     width: 350px;
-    
+
 
 }
 
@@ -287,7 +315,7 @@ div {
     border-collapse: separate;
     border: 1px solid gray;
     width: 100%;
-    
+
 }
 
 .tableSecond td {
@@ -295,7 +323,8 @@ div {
 }
 
 .tableSecond .auto {
-    table-layout: auto;/*The table layout is set to auto by default.*/
+    table-layout: auto;
+    /*The table layout is set to auto by default.*/
 
 }
 
@@ -318,9 +347,11 @@ a:hover - a link is hovered when the mouse is over it
     color: aquamarine;
 }
 
-.links .hover a:hover { /*:hover is 1 of 4 pseudo selectors*/
-    color:brown;
-    text-decoration: none; /*removes all decorations(this time just underline)*/
+.links .hover a:hover {
+    /*:hover is 1 of 4 pseudo selectors*/
+    color: brown;
+    text-decoration: none;
+    /*removes all decorations(this time just underline)*/
     /*
     border:none - removes border from images with links
     outline:none - removes the dotted border on clicked lines in IE
@@ -329,17 +360,21 @@ a:hover - a link is hovered when the mouse is over it
 
 .mouseCursor {
     background-image: url("/slike/mouseCursor.jpg");
-    background-position: center; /* Center the image */
-    background-size: contain; /* Resize the background image to /cover/ the entire container, you can also /contain/ it, so that full picutre is in side */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center;
+    /* Center the image */
+    background-size: contain;
+    /* Resize the background image to /cover/ the entire container, you can also /contain/ it, so that full picutre is in side */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
     height: 200px;
     width: 350px;
     color: darkorange;
 }
 
 .mouseCursor .cursorHelp {
-    cursor: help;/*many more*/
-    
+    cursor: help;
+    /*many more*/
+
 }
 
 /*Positioning and Layout*/
@@ -350,13 +385,15 @@ a:hover - a link is hovered when the mouse is over it
     width: 100%;
     margin: 10px 0;
     padding: 15px;
-    
+
 }
-.displayProperties .block{
+
+.displayProperties .block {
     color: darkturquoise;
     display: block;
     padding: 5px;
 }
+
 .displayProperties .block span {
     display: block;
 }
@@ -365,10 +402,10 @@ a:hover - a link is hovered when the mouse is over it
     color: darkturquoise;
     width: 650px;
 
-    
+
 }
 
-.displayProperties .inline span{
+.displayProperties .inline span {
     display: inline;
 
 }
@@ -379,7 +416,7 @@ a:hover - a link is hovered when the mouse is over it
 
 .displayProperties .none span {
     display: none;
-    
+
 }
 
 /*
@@ -396,30 +433,33 @@ Just play with values to see the difference.
 
 .visibility .hidden {
     background-color: dimgray;
-    visibility: hidden; /*visible*/
+    visibility: hidden;
+    /*visible*/
 }
-.visibility p{
+
+.visibility p {
     color: azure;
 }
 
 .position {
     background-color: dimgray;
     display: block;
-    
+
 }
 
 .position .static {
-    position: static; /*Static positioned elements are not affected by the top, bottom, left, and right properties.*/
-    top:30px;
+    position: static;
+    /*Static positioned elements are not affected by the top, bottom, left, and right properties.*/
+    top: 30px;
     right: 5px;
     color: red;
 }
 
 .position .fixed {
     position: fixed;
-    top:30px;
+    top: 30px;
     right: 5px;
-    
+
 }
 
 .position .relative {
@@ -434,7 +474,7 @@ Just play with values to see the difference.
 
 
 .position .absolute {
-    color:burlywood;
+    color: burlywood;
     /*
     An absolute position element is positioned 
     relative to the first parent element that has 
@@ -451,7 +491,7 @@ Just play with values to see the difference.
 /*float*/
 .floating {
     width: 100%;
-    height: 300px; 
+    height: 300px;
     display: flex;
     justify-content: none;
     align-items: none;
@@ -470,7 +510,7 @@ Just play with values to see the difference.
 
 
 .floating .floatnexttoeachother {
-    
+
     display: block;
 }
 
@@ -497,7 +537,8 @@ Just play with values to see the difference.
 .floating .floatclean .floati {
     float: right;
 }
-.floating .floatclean .cleari {    
+
+.floating .floatclean .cleari {
     clear: both;
 }
 
@@ -506,14 +547,15 @@ Just play with values to see the difference.
     height: 150px;
     background-color: lightblue;
     float: left;
-    overflow: scroll; /*overflow:auto; --> gives scroll bar if needed*/
+    overflow: scroll;
+    /*overflow:auto; --> gives scroll bar if needed*/
     /*default - visible*/
 }
 
 .z_index {
     display: block;
     color: aliceblue;
-    
+
 }
 
 .z_index .yellow {
@@ -523,7 +565,7 @@ Just play with values to see the difference.
     height: 60px;
     z-index: 3;
     position: relative;
-    
+
 }
 
 .z_index .red {
@@ -579,6 +621,7 @@ to create keyframes, set duration, easing, and more.
     border-radius: 0 20px 20px 0;
     color: aliceblue;
 }
+
 /*The value of border-radius can also be specified in percentages.*/
 
 .bCircle {
@@ -592,7 +635,7 @@ to create keyframes, set duration, easing, and more.
 
 
 .box-shadow {
-/*
+    /*
 - The first length for the horizontal offset will cast the shadow to 
 the right of the box (required)
 - The second length is for the vertical offset that will cast the 
@@ -626,13 +669,13 @@ box-shadow: horizontal(right) / vertical(down) / blur / spread / color;
     box-shadow: inset 10px 10px 7px -5px #27272796;
     /*code under this comment is just for look*/
     border-radius: 10px;
-    
+
 }
 
 .allShadow {
     box-shadow: inset 10px 10px 7px -5px #27272796,
-                inset -10px -10px 7px -5px #27272796,
-                0 0 10px 7px  #27272796;
+        inset -10px -10px 7px -5px #27272796,
+        0 0 10px 7px #27272796;
 
 }
 
@@ -642,7 +685,7 @@ box-shadow: horizontal(right) / vertical(down) / blur / spread / color;
     border-radius: 0;
     display: block;
 
-/*
+    /*
 Before CSS3, transparent background images were used to create transparency effects. The new features of CSS3 now make it easier to create transparency effects.
 
 CSS supports color names, hexadecimal, and RGB colors.
@@ -666,12 +709,12 @@ In the example below, a transparent glass menu bar is created with CSS3.
 
 .transparentEffect ul {
     background: linear-gradient(90deg,
-    rgba(255, 255, 255, 0) 0%, 
-     rgba(255, 255, 255, 0.2) 25%, 
-     rgba(255, 255, 255, 0.2) 75%, 
-     rgba(255, 255, 255, 0) 100%);
-     box-shadow: 0 25px rgba(0, 0, 0, 0.1),
-     inset 0 0 1px rgba(255, 255, 255, 0.6);
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.2) 25%,
+            rgba(255, 255, 255, 0.2) 75%,
+            rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 25px rgba(0, 0, 0, 0.1),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
 
 .transparentEffect ul li {
@@ -679,7 +722,7 @@ In the example below, a transparent glass menu bar is created with CSS3.
 }
 
 .transparentEffect ul li a {
-    padding: 10px; 
+    padding: 10px;
     color: #FFFFFF;
     font-size: 18px;
     font-family: Arial;
@@ -697,10 +740,11 @@ In the example below, a transparent glass menu bar is created with CSS3.
     text-shadow: x-offset y-offset blur color;
     */
     text-shadow: 5px 10px 2px #93968f,
-    -3px 6px 5px #58d1e3;
+        -3px 6px 5px #58d1e3;
 
 
 }
+
 /*
 The CSS pseudo-classes allow us to style elements, 
 or parts of elements, that exist in the document 
@@ -714,8 +758,8 @@ that is the first child element of some other element.
 */
 #PseudoClasses {
     display: flex;
-    flex-wrap: wrap;    
-    
+    flex-wrap: wrap;
+
 
 }
 
@@ -725,7 +769,7 @@ that is the first child element of some other element.
 
 #PseudoClasses p:first-child {
     color: yellowgreen;
-    
+
 }
 
 /*
@@ -744,7 +788,8 @@ that is the first child element of some other element.
     color: #68d127;
 }
 
-.pseudoBefore p::before { /*::after*/
+.pseudoBefore p::before {
+    /*::after*/
     content: url("/slike/miniSlika.jpg");
 }
 
@@ -772,9 +817,10 @@ Internet Explorer has a built-in bug when multiple @font-face rules are defined.
     font-family: Delicious;
     src: url('delicious-Roman.otf');
 }
+
 /*this is how you define new font family with @font-face*/
 
-.fontFace{
+.fontFace {
     font-family: Delicious;
 }
 
@@ -811,26 +857,26 @@ Internet Explorer has a built-in bug when multiple @font-face rules are defined.
     margin: 10px 0;
     border-radius: 0;
     /*works with images too*/
-    
+
 }
 
 .background-clip div {
     background: #58d1e3;
     border: 3px dotted red;
     padding: 20px;
-    
+
 }
 
 .background-clip .first {
-    
+
     background-clip: padding-box;
-    
+
 }
 
 .background-clip .second {
-    
+
     background-clip: content-box;
-    
+
 }
 
 .MultipleBackgrounds {
@@ -839,11 +885,11 @@ Internet Explorer has a built-in bug when multiple @font-face rules are defined.
     background-image: url("http://www.sololearn.com/uploads/css_logo.png"), url("http://www.sololearn.com/uploads/better-code.jpg");
     background-position: right bottom, left top;
     background-repeat: no-repeat;
-} 
+}
 
 .MultipleBackgrounds2 {
-    background: url("http://www.sololearn.com/uploads/css_logo.png") right top no-repeat, 
-    url("http://www.sololearn.com/uploads/better-code.jpg") left top no-repeat; 
+    background: url("http://www.sololearn.com/uploads/css_logo.png") right top no-repeat,
+        url("http://www.sololearn.com/uploads/better-code.jpg") left top no-repeat;
     width: 350px;
     height: 200px;
 }
@@ -856,9 +902,11 @@ Internet Explorer has a built-in bug when multiple @font-face rules are defined.
 #img1 {
     opacity: 1;
 }
+
 #img2 {
     opacity: 0.5;
 }
+
 #img3 {
     opacity: 0.25;
 }
@@ -875,19 +923,20 @@ Internet Explorer has a built-in bug when multiple @font-face rules are defined.
 }
 
 .transforms:hover {
-    transform: rotate(10deg); /*for up go negative -> -10deg*/
+    transform: rotate(10deg);
+    /*for up go negative -> -10deg*/
 }
 
 .translate:active {
-    transform:translate(100px,50px);
+    transform: translate(100px, 50px);
 }
 
 .skew:active {
-    transform:skew(-10deg);
+    transform: skew(-10deg);
 }
 
 .scale:hover {
-     transform: scale(0.7, 0.8);
+    transform: scale(0.7, 0.8);
 }
 
 .multipletrans:hover {
@@ -897,17 +946,25 @@ Internet Explorer has a built-in bug when multiple @font-face rules are defined.
 
 /*Keyframes hold the styles the element will have at certain times*/
 .keyframes:hover {
-        /*this under is for keyframes, animation*/
-        /*this two are must for animation*/
-        animation-name: colorchange;
-        animation-duration: 1s ;
+    /*this under is for keyframes, animation*/
+    /*this two are must for animation*/
+    animation-name: colorchange;
+    animation-duration: 1s;
 }
 
 /*if animation name does not mach any keyframe atribute animation will not execute*/
 @keyframes colorchange {
-    0% {background-color: red; }
-    50% {background-color: green; }
-    100% {background-color: blue; }
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: blue;
+    }
 }
 
 /*
@@ -926,9 +983,10 @@ cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier functi
     animation-duration: 3s;
     animation-delay: 0s;
     animation-timing-function: linear;
-    animation-iteration-count: 5;/*infinite is one of the values, don't use 0, it will never start*/
+    animation-iteration-count: 5;
+    /*infinite is one of the values, don't use 0, it will never start*/
     animation-direction: reverse;
-/*
+    /*
 normal - the default value, which means it plays forward from 0 % to 100%.
 reverse - plays the keyframe in an opposite direction from 100 % to 0%
 alternate - the animation first runs forward, then backward, then forward.
@@ -937,20 +995,20 @@ alternate-reverse - the animation first runs backward, then forward, then backwa
 }
 
 @keyframes somename {
-    
+
     0% {
         background-color: yellowgreen;
         transform: rotate(10deg);
         transform: scale(0.7, 0.8);
-        transform:skew(-10deg);
-        }
-        
+        transform: skew(-10deg);
+    }
+
     100% {
         background-color: white;
         transform: rotate(-10deg);
         transform: scale(0.8, 0.9);
-        transform:skew(10deg);
-        }
+        transform: skew(10deg);
+    }
 }
 
 .alltreed {
@@ -963,13 +1021,13 @@ alternate-reverse - the animation first runs backward, then forward, then backwa
 .transformsX:hover {
     transform: rotateX(150deg);
     background-color: #58d1e3;
-    
+
 }
 
 .transformsY:hover {
     transform: rotateY(150deg);
     background-color: #68d127;
-    
+
 }
 
 .transformsZ:hover {
@@ -1001,7 +1059,8 @@ alternate-reverse - the animation first runs backward, then forward, then backwa
 .drop-shadow:hover {
     background-color: #58d0e3;
     color: black;
-    filter:drop-shadow(0 0  5px rgba(49, 49, 49, 0.575)) /*width w and height h with blur b and color c*/
+    filter: drop-shadow(0 0 5px rgba(49, 49, 49, 0.575))
+        /*width w and height h with blur b and color c*/
 }
 
 /*Grayscale*/
@@ -1039,10 +1098,10 @@ alternate-reverse - the animation first runs backward, then forward, then backwa
 }
 
 .blur .filtered {
-    filter:blur(5px);
-  }
+    filter: blur(5px);
+}
 
-  /*
+/*
   viewport height
   vh
   A height of 100vh corresponds to the maximum possible viewport 
